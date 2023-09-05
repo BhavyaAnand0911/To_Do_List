@@ -13,6 +13,19 @@ nav {
   text-align: center;
   font-size: 3vh;
 }
+
+.header {
+  background-color: rgb(36, 36, 45);
+  padding: 15px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 3vh;
+}
+.header > a {
+  text-decoration: none;
+  margin: 30px;
+  color: white;
+}
 .container {
   background-color: rgba(38, 54, 146, 0.755);
   margin: auto;
@@ -83,4 +96,27 @@ button:hover {
 
 .tasks button:hover {
   background-color: red;
+}
+
+.about {
+  width: 100%;
+  background-color: red;
+  height: 100vh;
+}
+.contact {
+  width: 100%;
+  background-color: yellow;
+  height: 100vh;
+}
+.user {
+  width: 100%;
+  background-color: green;
+  height: 100vh;
+}
+footer {
+  background-color: black;
+  height: 50px;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }

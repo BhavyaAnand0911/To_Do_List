@@ -19,7 +19,7 @@ const Home = () => {
         const filtered = task.filter((val, i) => {
             return i !== index;
         });
-        console.log(filtered);
+        //console.log(filtered);
         setTask(filtered);
     }
 
@@ -28,7 +28,7 @@ const Home = () => {
     }, [task]);
 
     return <div  className='container'>
-        <h1>What are your goals for today?</h1>
+        <h1>What are your goals for today? </h1>
         <form onSubmit={handler}>
             <input type='text' placeholder='Title of Task' value={title} onChange={(e) => {
                 setTitle(e.target.value);
@@ -38,7 +38,6 @@ const Home = () => {
                 setDescription(e.target.value);
             }}>
             </textarea>
- 
             <button>ADD TASK</button>
         </form>
         {task.map((item,index) => {
